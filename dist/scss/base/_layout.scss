@@ -1,0 +1,59 @@
+%maxWidth {
+    width: 95%;
+    max-width: $max-width;
+    margin: 0px auto;
+}
+
+%bgImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__sed-cumbia{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+    @extend %bgImage;
+    background-image: url(../img/bg/bg-desktop.png);
+    display: flex;
+    @include media-xs-range-1 {
+        background-image: url(../img/bg/bg-mobile.png);
+    }
+}
+
+.sed-cumbia__content{
+    @extend %maxWidth;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    .sed-cumbia__logo{
+        width: 100%;
+        max-width: 550px;
+        flex: 1;
+        // padding-right:90px;
+        img {
+            width: 100%;
+        }
+        @include media-xs-range-1 {
+            display: none;
+        }
+    }
+    .sed-cumbia__right-section{
+        padding: 90px 0 90px 90px;
+        border-left: 2px solid $fourth-brand-color;
+        max-width: 550px;
+        width: 100%;
+        flex: 1;
+        @include media-xs-range-1 {
+            max-width: 100%;
+            border-left: unset;
+            padding: 0px 10px;
+            flex: unset;
+        }
+    }
+    @include media-xs-range-1 {
+        flex-wrap: wrap;
+    }
+}

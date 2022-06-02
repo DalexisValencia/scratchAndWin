@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+  <main class="main__sed-cumbia">
+    <div class="sed-cumbia__content">
+      <aside class="sed-cumbia__logo">
+        <img src="dist/img/logo.png" alt="">
+      </aside>
+
+      <section class="sed-cumbia__right-section">
+        <div class="scratchandwin__form">
+          <h2 class="scratchandwin__form-title">
+            Raspa y gana
+          </h2>
+          <p class="scratchandwin__form-subtitle">
+            Completa los siguientes datos y participa para ganar.
+          </p>
+          <form class="ab-raspaygana-form" data-drupal-selector="ab-raspaygana-form" action="/es/registro-gana"
+            method="post" id="ab-raspaygana-form" accept-charset="UTF-8">
+            <div class="js-form-item form-item js-form-type-textfield form-item-code js-form-item-code">
+              <label for="edit-code" class="js-form-required form-required">Codigo de cliente</label>
+              <input data-drupal-selector="edit-code" type="text" id="edit-code" name="code" value="" size="60"
+                maxlength="128" class="form-text required" required="required" aria-required="true" placeholder="Código de cliente">
+            </div>
+            <div class="js-form-item form-item js-form-type-textfield form-item-email js-form-item-email">
+              <label for="edit-email" class="js-form-required form-required">Escriba su email</label>
+              <input data-drupal-selector="edit-email" type="text" id="edit-email" name="email" value="" size="60"
+                maxlength="128" class="form-text required" required="required" aria-required="true" placeholder="Correo electrónico">
+            </div>
+            <div class="js-form-item form-item js-form-type-select form-item-genero js-form-item-genero">
+              <label for="edit-genero">Seleccione su genero</label>
+              <select data-drupal-selector="edit-genero" id="edit-genero" name="genero" class="form-select">
+                <option default>Género</option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+                <option value="3">Otro</option>
+              </select>
+            </div>
+            <div class="js-form-item form-item js-form-type-textfield form-item-nacimiento js-form-item-nacimiento">
+              <label for="edit-nacimiento" class="js-form-required form-required">Fecha de nacimiento</label>
+              <input data-drupal-selector="edit-nacimiento" type="text" id="edit-nacimiento" name="nacimiento" value=""
+                size="60" maxlength="128" class="form-text required" required="required" aria-required="true" placeholder="Fecha de nacimiento">
+            </div>
+            <div class="js-form-item form-item js-form-type-checkbox form-item-terminos js-form-item-terminos">
+              <input data-drupal-selector="edit-terminos" type="checkbox" id="edit-terminos" name="terminos" value="1"
+                class="form-checkbox required" required="required" aria-required="true">
+              <label for="edit-terminos" class="option js-form-required form-required"><a
+                  href="https://www.ganaconbees.com/terminos-condiciones">Acepto Términos y condiciones</a><a
+                  href="https://www.backus.pe/abilegal/politica-deproteccion-de-datos-personales">y Política de
+                  protección de datos personales.</a></label>
+            </div>
+            <div id="terminos-result" class="form-error"></div>
+            <div class="js-form-item form-item js-form-type-checkbox form-item-marketing js-form-item-marketing">
+              <input data-drupal-selector="edit-marketing" type="checkbox" id="edit-marketing" name="marketing"
+                value="1" class="form-checkbox">
+              <label for="edit-marketing" class="option"><a href="#">Deseo recibir información comercial y eventos de
+                  Backus y sus marcas asociadas.</a></label>
+            </div>
+            <div id="terminos-result" class="form-error"></div>
+            <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Ingresar"
+              class="button js-form-submit form-submit">
+
+            <input autocomplete="off" data-drupal-selector="form-ws-aak5j4mtdn0jabt5uzxqdqzck4kzj5o6b5hmorbs"
+              type="hidden" name="form_build_id" value="form-wS_aak5j4mTdn0Jabt5uZXQdqzCK4kzj5O6b5HmORBs">
+            <input data-drupal-selector="edit-ab-raspaygana-form" type="hidden" name="form_id"
+              value="ab_raspaygana_form">
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="award award-roulette innecesary-modal">
+      <div class="award-box">
+        <h2 class="award-box__title">¡FELICIDADES!</h2>
+        <div class="award-box__content">
+          <div class="content-info">
+            <p class="content-description">
+              Ya has ganado! Recuerda que solo puedes participar 1 vez.
+              <br>
+              A continuación te mostramos tu premio:
+            </p>
+            <img src="dist/img/award-ex-1.png" alt="">
+            <p class="content-copy">
+              Cargaremos los puntos en tu cuenta Bees en las próximas 48 horas.
+            </p>
+          </div>
+        </div>
+
+        <div class="award-box__actions">
+          <button type="button" class="award-box__close close-innecesary-modal">
+            FINALIZAR
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

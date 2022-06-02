@@ -1,0 +1,22 @@
+@import "abstracts/fonts";
+@import "abstracts/normalize";
+@import "abstracts/variables";
+//base
+@import "base/queries";
+@import "base/layout";
+//components
+@import "components/award";
+@import "components/breadcrumbs";
+@import "components/checkbox";
+@import "components/goUp";
+@import "components/buttons";
+@import "components/footer";
+@import "components/header";
+@import "components/input";
+@import "components/selects";
+//pages 
+@import "pages/homepage";
+@import "pages/notFound";
+@import "pages/register";
+@import "pages/scratchandwin";
+@import "pages/tyc";

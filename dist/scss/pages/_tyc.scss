@@ -1,0 +1,77 @@
+.sed-cumbia__tyc-content {
+    min-height: 100%;
+    overflow-y: hidden;
+    @extend %maxWidth;
+}
+.tyc__title{
+    color: $secondary-brand-color;
+    margin-bottom: 70px;
+    line-height: 1.1;
+    font: {
+        size: 30px;
+        family: 'barbaro';
+    }
+}
+
+.tyc__body {
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto;
+    position: relative;
+    overflow-x: hidden;
+    &::before,
+    &::after {
+        content: "";
+        @extend %bgImage;
+        position: absolute;
+        width: 484px;
+        height: 119px;
+        background-image: url(../img/misc/thunder-top.svg);
+        transform: rotate(90deg);
+        top: 38%;
+        @include media-xs-range-1 {
+            content: unset;
+        }
+    }
+    &::before {
+        left: -49%;
+        transform: rotate(90deg) scaleY(-1);
+    }
+    &::after {
+        right: -49%;
+    }
+    &, * {
+        color: $fourth-brand-color;
+        font: {
+            size: 18px;
+            family: 'Roboto', sans-serif;
+            weight: 400;
+        }
+    }
+    .tyc__btn-go-back{
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        margin: 90px auto 30px;
+        padding: 10px 30px;
+        background-color: $fourth-brand-color;
+        color: $secondary-brand-color;
+        border-radius: 6px;
+        border: 4px solid $primary-brand-color;
+        text-align: center;
+        line-height: 1.1;
+        font: {
+            size: 14px;
+            weight: bold;
+            family: 'Roboto', sans-serif;
+        }
+    }
+    .sed-cumbia__goUp{
+        position: relative;
+        right: -69%;
+        @include media-xs-range-1 {
+            right: -85%;
+        }
+    }
+}

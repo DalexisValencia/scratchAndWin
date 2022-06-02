@@ -1,0 +1,190 @@
+.homepage {
+    position: relative;
+    overflow-x: hidden;
+    .homepage--main-container {
+        background-color: $secondary-brand-color;
+    }
+    //Headline
+    .main-headline {
+        @extend %maxWidth;
+        position: relative;
+        margin-top: -20vw;
+        padding: 50px 10px;
+        background-color: $secondary-brand-color;
+        text-align: center;
+        z-index: 3;
+        * {
+            color: $primary-brand-color;
+        }
+        .headline-title {
+            font-family: 'Playfair-regular';
+            margin: 0px;
+            text-transform: uppercase;
+            font-size: 39px;
+            @include media-xs {
+                font-size: 33px;
+            }
+        }
+        .headline-subtitle {
+            font-family: 'Playfair-regular';
+            font-size: 30px;
+            @include media-xs {
+                font-size: 26px;
+            }
+        }
+        .headline-description {
+            @extend %maxWidth;
+            max-width: 800px;
+            font-family: 'Montserrat-Regular';
+            font-size: 14px;
+            margin-top: 30px;
+            @include media-xs {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+//stay section
+.homepage-stay {
+    background-color: $fourth-brand-color;
+    .stay-room {
+        @extend %maxWidth;
+        padding: 65px 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        @include media-xs {
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 50px 10px;
+        }
+    }
+    .stay-room--container {
+        width: 100%;
+        max-width: 400px;
+        padding-right: 30px;
+        .stay-room--subtitle {
+            width: 100%;
+            text-align: center;
+            color: $secondary-brand-color;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-family: 'Montserrat-Bold';
+            font-size: 17px;
+            @include media-xs {
+                margin-top: 25px;
+                font-size: 15px;
+            }
+        }
+        .stay-room--title {
+            line-height: 1.4;
+            color: $secondary-brand-color;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-align: left;
+            color: $fifth-brand-color;
+            font-family: 'Montserrat-Bold';
+            font-size: 33px;
+            @include media-xs {
+                font-size: 30px;
+            }
+        }
+        .stay-room--description {
+            font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            color: $secondary-brand-color;
+            margin-bottom: 50px;
+            @include media-xs {
+                font-size: 12px;
+            }
+        }
+        .stay-room--button {
+            font-family: 'Montserrat-Medium';
+            font-size: 17px;
+            color: $tertiary-brand-color;
+            padding: 10px;
+            border: 2px solid $tertiary-brand-color;
+            color: $tertiary-brand-color;
+            text-transform: uppercase;
+            text-align: center;
+            width: 180px;
+            @include media-xs {
+                font-size: 15px;
+            }
+        }
+    }
+    .stay-room--image {
+        max-width: 612px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.homepage-events {
+    background-color: #ffffff;
+    .homepage-events--wrapper {
+        padding: 45px 10px;
+        @extend %maxWidth;
+        .homepage-events--title {
+            font-size: 17px;
+            font-family: 'Montserrat-Medium';
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .homepage-events--slider {
+            .events-slider-item {
+                position: relative;
+                .item-date {
+                    width: 8.5vw;
+                    padding: 2% 7%;
+                    position: absolute;
+                    * {
+                        color: #ffffff;
+                        font-family: 'Montserrat-Bold';
+                    }
+                    .item-day {
+                        font-size: 4vw;
+                        @include media-min-width {
+                            font-size: 50px;
+                        }
+                        @include media-xs {
+                            font-size: 10vw;
+                        }
+                    }
+                    .item-month {
+                        position: absolute;
+                        transform: rotate(90deg) scale(-1);
+                        right: -0.5vw;
+                        top: 2vw;
+                        width: 40%;
+                        font-size: 1.1vw;
+                        @include media-xs {
+                            font-size: 4.1vw;
+                            top: 5vw;
+                        }
+                        @include media-min-width {
+                            font-size: 14px;
+                            right: -5px;
+                            top: 22px;
+                        }
+                    }
+                    @include media-xs {
+                        width: 23.5vw;
+                    }
+                    @include media-min-width {
+                        width: 95px;
+                        padding: 5px 15;
+                    }
+                }
+            }
+            .owl-nav {
+                display: none;
+            }
+        }
+    }
+}

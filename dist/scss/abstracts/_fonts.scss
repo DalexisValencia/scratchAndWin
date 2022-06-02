@@ -1,0 +1,26 @@
+$path: '../fonts';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// font-family: 'Roboto', sans-serif;
+@font-face {
+    font-family: 'barbaro';
+    src: url('#{$path}/barbaro.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Tahoma-bold';
+    src: url('#{$path}/Tahoma-bold.TTF');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Tahoma-medium';
+    src: url('#{$path}/Tahoma-medium.TTF');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Tahoma-regular';
+    src: url('#{$path}/Tahoma-regular.ttf+');
+    font-display: fallback;
+}

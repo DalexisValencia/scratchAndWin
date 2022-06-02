@@ -1,0 +1,43 @@
+.main-header {
+    @extend %maxWidth;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 94px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 55px;
+    background-color: $primary-brand-color;
+    .main-header--location {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    .brand-logo {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin: 0px auto;
+        left: 0;
+        right: 0;
+        @include media-xs {
+            position: relative;
+            left: unset;
+            right: unset;
+            margin: 0;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    @include media-xs {
+        margin-top: 0px;
+        position: unset;
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
