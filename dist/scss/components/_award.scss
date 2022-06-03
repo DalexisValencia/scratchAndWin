@@ -5,7 +5,7 @@ $media-bp-sm: 767.98px;
 $media-bp-md: 991.98px;
 $media-bp-lg: 1199.98px;
 
-.award {
+.award.scratchAndWin {
   display: flex;
   align-items: center;
   background-color: rgba($color: $secondary-brand-color, $alpha: .2);
@@ -243,7 +243,7 @@ $media-bp-lg: 1199.98px;
 }
 
 @media screen and (max-width: $media-bp-md) {
-  .award {
+  .award.scratchAndWin {
     .content-info__award {
       font-size: 20px;
       padding: 15px 20px;
@@ -266,7 +266,7 @@ $media-bp-lg: 1199.98px;
   }
 }
 @media screen and (max-width: $media-bp-sm) {
-  .award {
+  .award.scratchAndWin {
     .award-box__content {
       display: block;
     }
@@ -312,7 +312,7 @@ $media-bp-lg: 1199.98px;
 }
 
 @media screen and (max-width: $media-bp-xs) {
-  .award {
+  .award.scratchAndWin {
     padding: 3rem 0 6rem 0;
     .award-box {
       position: absolute;

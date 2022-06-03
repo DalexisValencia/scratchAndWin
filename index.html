@@ -7,6 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <style>
+        .scratchpad {
+            width: 450px;
+            height: 445px;
+            border: solid 10px #FFFFFF;
+            margin: 0 auto;
+        }
+
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: #ddd;
+        }
+
+        @media (max-width: 500px) {
+            .scratchpad {
+                width: 90%;
+                height: 500px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +58,8 @@
 
                     <div class="scratchandwin__content">
                         <img src="dist/img/misc/thunder-top.svg" alt="" class="scratchandwin__crafts-top">
-                        <div id="scratchandwin"></div>
+                        <!-- <div id="scratchandwin" class="scratchpad"></div> -->
+                        <div id="promo" class="scratchpad"></div>
                         <img src="dist/img/misc/thunder-bottom.svg" alt="" class="scratchandwin__crafts-bottom">
                     </div>
                 </div>
@@ -83,5 +109,7 @@
         </footer>
     </main>
 </body>
-
+<script src="dist/vendor/jquery-3.6.0.slim.js"></script>
+<script src="dist/vendor/wScratchPad/wScratchPad.min.js"></script>
+<script src="dist/js/main.js"></script>
 </html>
