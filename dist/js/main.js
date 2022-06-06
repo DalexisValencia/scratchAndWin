@@ -13,9 +13,16 @@
                 if (percent > 70 && !showModal) {
                   showModal = true;
                   this.clear();
-                  alert("Mostrar modal")
+                  // alert("Mostrar modal")
+                  hiddeShowModal();
                 }
               }
         });
+
+        //show and hidde modal
+        function hiddeShowModal() {
+          $(".award.scratchAndWin").toggleClass("active");
+          $("body").toggleClass("no-scrol");
+        }
     });
 })(jQuery);
