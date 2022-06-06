@@ -24,5 +24,7 @@
           $(".award.scratchAndWin").toggleClass("active");
           $("body").toggleClass("no-scrol");
         }
+
+        $("#showModal").on("click", hiddeShowModal);
     });
 })(jQuery);

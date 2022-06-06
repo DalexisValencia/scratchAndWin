@@ -1,35 +1,54 @@
 .notfound__wrapper{
-    // border: 1px dashed black;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: $fourth-brand-color;
+    text-align: left;
+    padding: 120px 10px;
     * {
         text-align: center;
     }
-    .notfound__crafts-top{
+    .notfound__container {
         width: 100%;
-        max-width: 484px;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .notfound__logo{
+        width: 100%;
+        max-width: 326px;
+        margin: 0px auto;
     }
     .notfound__title{
-        color: $primary-brand-color;
-        font: {
-            size: 170px;
-            family: 'barbaro';
-        }
-    }
-    .notfound__subtitle {
         color: $secondary-brand-color;
-        margin: 60px 0;
+        text-transform: uppercase;
+        line-height: 1.2;
         font: {
-            size: 45px;
-            family: 'barbaro';
-        }
-    }
-    .notfound__info {
-        color: $fourth-brand-color;
-        text-align: left;
-        font: {
-            family: 'Roboto', sans-serif;
-            size: 18px;
+            size: 30px;
+            family: 'Work Sans', sans-serif;
             weight: 400;
         }
     }
-
+    .notfound__info {
+        color: $secondary-brand-color;
+        text-align: left;
+        margin: 50px 0 50px 70px;
+        font: {
+            family: 'Roboto', sans-serif;
+            size: 18px;
+            weight: 200;
+        }
+        @include media-xs {
+            margin: 50px 20px;
+        }
+    }
+    .notfound__btn {
+        @extend %button;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font: {
+            family: 'Roboto', sans-serif;
+            size: 16px;
+            weight: 200;
+        }
+    }
 }
