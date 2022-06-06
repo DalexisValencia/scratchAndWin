@@ -1,0 +1,30 @@
+<!-- <div class="tyc-page" id="tyc-page">
+  {{node.body.value|raw}}
+  <a href="{{path('entity.taxonomy_term.canonical', {'taxonomy_term': node.field_abi_legalmaker_category.entity.tid.value})}}" class="tyc-page__button button-back">{{'Volver a la página anterior'|t}}</a>
+  <a href="#tyc-page" class="tyc-page__goto goto">></a>
+</div> -->
+
+        <section class="tyc-internal">
+
+            <div class="container">
+                <div class="tyc-internal__content">
+                    <div class="tyc-internal__title">
+                        <h1>{{node.title.value|raw}}</h1>
+                        <div class="tyc-internal__pdf">
+                            <span class="copy">Última actualización: {{ node.changed.value|format_date('custom',"j F Y") }}</span>
+                            <!-- <a href="#" class="download" download="">Descargar PDF<i class="icon-download"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="tyc-internal__text">
+                       {{node.body.value|raw}}
+                    </div>
+                    <div class="tyc-internal__prev">
+                        <a href="{{path('entity.taxonomy_term.canonical', {'taxonomy_term': node.field_abi_legalmaker_category.entity.tid.value})}}">Volver a la página anterior</a>
+                    </div>
+                    <div class="tyc-internal__top">
+                        <i class="icon-arrow-top"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+{{attach_library('theme_name/tycpaco')}}

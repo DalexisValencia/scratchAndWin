@@ -1,0 +1,61 @@
+
+<section class="tyc-page tyc-background">
+  <div class="container">
+    <div class="tyc-page__content">
+      <div class="tyc-page__title">
+        <h1>Términos y condiciones</h1>
+      </div>
+      <div class="tyc-page__list">
+        <ul>
+          {% set taxonomies =
+          get_taxonomies_by_vid('abi_legalmaker_categories_terms') %}
+
+            
+   
+          {% for item in taxonomies %}
+          <li data-id="results-{{ item.tid }}" class="{% if item.url == url('<current>')["#markup"] %}active{% endif %}">
+            <a
+              href="{{ item.url }}"
+              target="{{item.external ? '_blank' : '_self'}}"
+              class="tyc-type__item"
+              data-tab="tab1"
+			        {% set content = get_content_related_taxonomy(item.tid) %} 
+              {% set count = 0 %}
+			        {% for item in content['data'] %}
+                  {% set count = count + 1 %}
+              {% endfor %}
+              >{{item.name}}{% if count > 0 %}<span>{{ count }}</span>{% endif %}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="tyc-page__results">
+        <div class="tyc-page__resultsItems" data-id="results-1">
+          {% set content = get_content_related_taxonomy(term.id) %}
+          {% if content['data'] == null %}
+               <ul>
+                  <li><a href="#"> No hay informacion para mostrar.</a></li>
+                </ul>
+          {% else %}
+              <ul>
+			        {% for item in content['data'] %}
+                <li>
+                  <a href="{{item.path}}"	>{{item.title}}<i class="icon-arrow-right"></i></a>
+                  <!-- {% if item.pdf != "" %}
+                    <p class="content-item__text pdf">
+                      <a href="{{item.pdf}}" target="_blank"
+                      ><i class="icon-arrow-down"></i></a
+                      >
+                    </p>
+                  {% endif %} -->
+                </li>
+          		{% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{attach_library('theme_name/tycpaco')}}

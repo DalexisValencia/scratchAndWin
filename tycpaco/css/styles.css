@@ -1,0 +1,563 @@
+/*General*/
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*tyc-page*/
+    .tyc-page{
+        position: relative;
+        padding: 80px 0 100px 0;
+        background: rgb(1,79,182);
+        background: radial-gradient(circle, rgba(1,79,182,1) 0%, rgba(1,53,133,1) 100%);
+        background-image: url("https://stage.clubcolombia.com.co/sites/g/files/yrakuj2026/themes/site/co_club/workspace/dist/assets/images/a3d434eb6b14145c16f8.svg");
+    }
+    .tyc-page:before{/*LATA DE CERVEZA LATERAL IZQUIERDA*/
+        content: unset;
+        top: 380px;
+        left: 7%;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        background-image: url("../img/tapa-cc.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .tyc-page:after{/*LATA DE CERVEZA LATERAL IZQUIERDA*/
+        content: unset;
+        right: 7%;
+        bottom: 40px;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        background-image: url("../img/tapa-cc.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    /*tyc-page__title*/
+    .tyc-page .tyc-page__content .tyc-page__title{
+        z-index: 3;
+        padding: 70px 0;
+        text-align: center;
+        position: relative;
+    }
+    /* .tyc-page .tyc-page__content .tyc-page__title:before{
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 1px;
+        height: 55px;
+        margin: 0 auto;
+        position: absolute;
+        background-color: #000;
+    }
+    .tyc-page .tyc-page__content .tyc-page__title:after{
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        height: 55px;
+        margin: 0 auto;
+        position: absolute;
+        background-color: #000;
+    } */
+    .tyc-page .tyc-page__content .tyc-page__title h1{
+        margin: 0;
+        color: #000;
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-style: unset;
+        text-align: left;
+    }
+
+    /*tyc-page__list*/
+    .tyc-page .tyc-page__content .tyc-page__list{
+        z-index: 3;
+        position: relative;
+        padding: 50px 0 80px 0;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        display: flex;
+        flex-direction: row;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li{
+        width: 340px;
+        height: 60px;
+        margin: 0 7.5px;
+        padding: 0 15px;
+        cursor: pointer;
+        text-align: center;
+        transition: all .15s;
+        box-sizing: border-box;
+        background-color: #000;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li:first-child{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li:last-child{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li a{
+        width: 340px;
+        height: 60px;
+        color: #FFCB07;
+        font-size: 1.4rem;
+        line-height: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li span{
+        display: none;
+        padding: 3px 7px 2px 7px;
+        margin-left: 5px;
+        color: #FFCB07;
+        font-size: .75rem;
+        line-height: normal;
+        border-radius: 30px;
+        background-color: #000;
+        font-family: 'montserrat-medium';
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li:hover,
+    .tyc-page .tyc-page__content .tyc-page__list ul li.active,
+    .tyc-page .tyc-page__content .tyc-page__list ul li.is-active{
+        background-color: #FFCB07;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li:hover a,
+    .tyc-page .tyc-page__content .tyc-page__list ul li.active a,
+    .tyc-page .tyc-page__content .tyc-page__list ul li.is-active a{
+        color: #000;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li:hover span,
+    .tyc-page .tyc-page__content .tyc-page__list ul li.active span,
+    .tyc-page .tyc-page__content .tyc-page__list ul li.is-active span{
+        display: inline-block;    
+    }
+
+    /*tyc-page__results*/
+    .tyc-page .tyc-page__content .tyc-page__results{
+        z-index: 3;
+        position: relative;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems{
+        display: none;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems:first-child{
+        display: flex;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li{
+        width: 500px;
+        min-height: 60px;
+        padding: 0 15px;
+        cursor: pointer;
+        margin-bottom: 35px;
+        border-radius: 10px;
+        transition: all .15s;
+        box-sizing: border-box;
+        border: 2px solid #FFEA00;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        color: black;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li:last-child{
+        margin-bottom: 0;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li:hover,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.active,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.is-active{
+        background-color: #FFEA00;
+        border: 2px solid #FFEA00;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li a{
+        width: 500px;
+        height: 60px;
+        color: #000;
+        font-size: 14px;
+        line-height: normal;
+        position: relative;
+        text-align: center;
+        padding-right: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li:hover a,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.active a,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.is-active a{
+        color: #000;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li a .icon-arrow-right{
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        color: #000;
+        position: absolute;
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        transform: rotate(45deg);
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li a .icon-arrow-right:before{
+        content: '';
+        right: 0;
+        top: -1px;
+        width: 17px;
+        height: 1.5px;
+        position: absolute;
+        box-shadow: inset 0 0 0 32px;
+        transform: rotate(-45deg);
+        transform-origin: right top;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li:hover a .icon-arrow-right,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.active a .icon-arrow-right,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.is-active a .icon-arrow-right
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li:hover a .icon-arrow-right:before,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.active a .icon-arrow-right:before,
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li.is-active a .icon-arrow-right:before{
+        color: #002D6E;
+    }
+
+/*tyc-internal*/
+    .tyc-internal{
+        position: relative;
+        padding: 80px 0 100px 0;
+        background-color: #fff;
+        /* background: rgb(1,79,182);
+        background: radial-gradient(circle, rgba(1,79,182,1) 0%, rgba(1,53,133,1) 100%); */
+    }
+    .tyc-internal:before{/*Decoracion de lata*/
+        content: unset;
+        top: 45px;
+        right: 7%;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        transform: rotate(-90deg);
+        background-image: url("../img/tapa-cc.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .tyc-internal:after{/*Decoracion de lata*/
+        content: unset;
+        left: 7%;
+        bottom: 80px;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        transform: rotate(-180deg);
+        background-image: url("../img/tapa-cc.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    /*tyc-internal__title*/
+    .tyc-internal .tyc-internal__content .tyc-internal__title h1{
+        margin: 0;
+        color: #000;
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-style: unset;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf{
+        margin-top: 30px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf span.copy{
+        height: 45px;
+        margin-right: 15px;
+        padding: 0 25px;
+        color: #FFCB07;
+        font-size: 1.1rem;
+        line-height: normal;
+        border-radius: 30px;
+        display: inline-block;
+        background-color: #000;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-weight: 500;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf a.download{
+        height: 45px;
+        padding: 0 25px;
+        color: #002D6E;
+        font-size: .85rem;
+        font-weight: bold;
+        line-height: normal;
+        border-radius: 30px;
+        text-decoration: none;
+        background-color: #FFEB00;
+        font-family: 'montserrat-medium';
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf a.download .icon-download{
+        width: 25px;
+        height: 20px;
+        margin-left: 5px;
+        display: inline-block;
+        background-image: url("../img/icon-download.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    /*tyc-internal__text*/
+    .tyc-internal .tyc-internal__content .tyc-internal__text{
+        padding-top: 60px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h1{
+        font-size: 2.25rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h2{
+        font-size: 2rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h3{
+        font-size: 1.75rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h4{
+        font-size: 1.5rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h5{
+        font-size: 1.25rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h6{
+        font-size: 1rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text h1,
+    .tyc-internal .tyc-internal__content .tyc-internal__text h2,
+    .tyc-internal .tyc-internal__content .tyc-internal__text h3,
+    .tyc-internal .tyc-internal__content .tyc-internal__text h4,
+    .tyc-internal .tyc-internal__content .tyc-internal__text h5,
+    .tyc-internal .tyc-internal__content .tyc-internal__text h6{
+        color: #000;
+        line-height: normal;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text a,
+    .tyc-internal .tyc-internal__content .tyc-internal__text blockquote,
+    .tyc-internal .tyc-internal__content .tyc-internal__text cite,
+    .tyc-internal .tyc-internal__content .tyc-internal__text em,
+    .tyc-internal .tyc-internal__content .tyc-internal__text ol li,
+    .tyc-internal .tyc-internal__content .tyc-internal__text p,
+    .tyc-internal .tyc-internal__content .tyc-internal__text pre,
+    .tyc-internal .tyc-internal__content .tyc-internal__text span,
+    .tyc-internal .tyc-internal__content .tyc-internal__text sub,
+    .tyc-internal .tyc-internal__content .tyc-internal__text sup, 
+    .tyc-internal .tyc-internal__content .tyc-internal__text ul li{
+        color: #000;
+        font-size: 1.5rem;
+        line-height: 23px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text b,
+    .tyc-internal .tyc-internal__content .tyc-internal__text strong{
+        color: #000;
+        font-size: 1.5rem;
+        line-height: 23px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text blockquote,
+    .tyc-internal .tyc-internal__content .tyc-internal__text cite{
+        padding: 0 10px;
+        position: relative;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text blockquote:before,
+    .tyc-internal .tyc-internal__content .tyc-internal__text cite:before{
+        content: open-quote;
+        top: 0;
+        left: -7.5px;
+        width: auto;
+        height: auto;
+        position: absolute;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text blockquote:after,
+    .tyc-internal .tyc-internal__content .tyc-internal__text cite:after{
+        content: close-quote;
+        top: 0;
+        right: initial;
+        width: auto;
+        height: auto;
+        position: absolute;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text hr{
+        background-color: #FFFFFF;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text ul{
+        padding: 0;
+        margin-left: 15px;
+        list-style: disc;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text ul {
+        color: #FFFFFF;
+        font-size: 1rem;
+        line-height: 23px;
+        font-family: "Poppins";
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text ul li::marker{
+        color: #000;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text ol{
+        padding: 0;
+        margin-left: 15px;
+        list-style: decimal;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text ol li{
+        color: #FFFFFF;
+        font-size: 1rem;
+        line-height: 23px;
+        font-family: "Poppins";
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text ol li::marker{
+        color: #000;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text table{
+        width: 100%;
+        height: auto;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text table tr td{
+        color: #FFFFFF;
+        font-size: 1rem;
+        line-height: 23px;
+        padding: 5px 10px;
+        font-family: "Poppins";
+        border: 1px solid #FFFFFF;
+    }
+
+    /*tyc-internal__prev*/
+    .tyc-internal .tyc-internal__content .tyc-internal__prev{
+        width: 500px;
+        height: 55px;
+        margin: 0 auto;
+        padding: 0 15px;
+        cursor: pointer;
+        margin-top: 80px;
+        border-radius: 10px;
+        transition: all .15s;
+        box-sizing: border-box;
+        border: 2px solid #FFCB07;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__prev:hover{
+        background-color: #FFCB07;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__prev:hover a{
+        color: #000;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__prev a{
+        width: 500px;
+        height: 55px;
+        color: #000;
+        font-size: 14px;
+        line-height: normal;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*tyc-internal__top*/
+    .tyc-internal .tyc-internal__content .tyc-internal__top{
+        right: 7%;
+        bottom: 80px;
+        cursor: pointer;
+        position: absolute;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__top .icon-arrow-top{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+        background-color: #FFCB07;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__top .icon-arrow-top:before{
+        content: '';
+        top: 5px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        color: #000;
+        position: absolute;
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        transform: rotate(-45deg);
+    }
+    

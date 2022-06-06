@@ -1,0 +1,38 @@
+/*futura-book*/
+@font-face {
+    font-family: 'futura-book';
+    src: url('../fonts/futura-book/futuralt-book.eot');
+    src: url('../fonts/futura-book/futuralt-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futura-book/futura-book.woff2') format('woff2'),
+         url('../fonts/futura-book/futura-book.woff') format('woff'),
+         url('../fonts/futura-book/futura-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*futura-condensed-extrabold*/
+@font-face {
+    font-family: 'futura-condensed-extrabold';
+    src: url('../fonts/futura-condensed-extrabold/futura-condensed-extrabold.eot');
+    src: url('../fonts/futura-condensed-extrabold/futura-condensed-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futura-condensed-extrabold/futura-condensed-extrabold.woff2') format('woff2'),
+         url('../fonts/futura-condensed-extrabold/futura-condensed-extrabold.woff') format('woff'),
+         url('../fonts/futura-condensed-extrabold/futura-condensed-extrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*montserrat-medium*/
+@font-face {
+    font-family: 'montserrat-medium';
+    src: url('../fonts/montserrat-medium/montserrat-medium.eot');
+    src: url('../fonts/montserrat-medium/montserrat-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-medium/montserrat-medium.woff2') format('woff2'),
+         url('../fonts/montserrat-medium/montserrat-medium.woff') format('woff'),
+         url('../fonts/montserrat-medium/montserrat-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

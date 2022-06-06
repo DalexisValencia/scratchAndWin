@@ -1,0 +1,178 @@
+
+/*Responsive min-width*/
+@media (min-width: 576px){
+    .container{
+        max-width: 576px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+
+/*resposive max-width*/
+@media (max-width: 1640px){
+    .tyc-page:before{
+        left: 3%;
+        width: 120px;
+        height: 120px;
+    }
+    .tyc-page:after{
+        right: 3%;
+        width: 120px;
+        height: 120px;
+    }
+    .tyc-internal:before{
+        right: 3%;
+        width: 120px;
+        height: 120px;
+    }
+    .tyc-internal:after{
+        left: 3%;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 1024px){
+    /*tyc-page*/
+    .tyc-page:before,
+    .tyc-page:after{
+        display: none;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li{
+        width: 300px;
+        height: 55px;
+    }
+    /*tyc-internal*/
+    .tyc-internal:before,
+    .tyc-internal:after{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    /*tyc-page*/
+    .tyc-page .tyc-page__content .tyc-page__title h1{
+        font-size: 3.5rem;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li{
+        width: 200px;
+        height: 55px;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li{
+        width: 450px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 570px){
+    /*tyc-page*/
+    .tyc-page .tyc-page__content .tyc-page__title{
+        padding: 0;
+    }
+    .tyc-page .tyc-page__content .tyc-page__title:before,
+    .tyc-page .tyc-page__content .tyc-page__title:after{
+        display: none;
+    }
+    .tyc-page .tyc-page__content .tyc-page__title h1{
+        font-size: 2.25rem;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list{
+        padding: 30px 0 40px 0;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul {
+        width: 100%;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li{
+        width: 110px;
+        height: 55px;
+        margin: 0 2.5px;
+        flex: 1;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li a{
+        font-size: 10px;
+        text-transform: capitalize;
+    }
+    .tyc-page .tyc-page__content .tyc-page__list ul li span{
+        font-size: .65rem;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul {
+        width: 100%;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    .tyc-page .tyc-page__content .tyc-page__results .tyc-page__resultsItems ul li a{
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    /*tyc-internal*/
+    .tyc-internal .tyc-internal__content .tyc-internal__title h1{
+        font-size: 20px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf{   
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf span.copy{
+        height: 40px;
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__title .tyc-internal__pdf a.download{
+        height: 40px;
+        font-size: .75rem;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text{
+        padding-top: 30px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text a,
+    .tyc-internal .tyc-internal__content .tyc-internal__text blockquote,
+    .tyc-internal .tyc-internal__content .tyc-internal__text cite,
+    .tyc-internal .tyc-internal__content .tyc-internal__text em,
+    .tyc-internal .tyc-internal__content .tyc-internal__text ol li,
+    .tyc-internal .tyc-internal__content .tyc-internal__text p,
+    .tyc-internal .tyc-internal__content .tyc-internal__text pre,
+    .tyc-internal .tyc-internal__content .tyc-internal__text span,
+    .tyc-internal .tyc-internal__content .tyc-internal__text sub,
+    .tyc-internal .tyc-internal__content .tyc-internal__text sup, 
+    .tyc-internal .tyc-internal__content .tyc-internal__text ul li{
+        font-size: 18px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__text b,
+    .tyc-internal .tyc-internal__content .tyc-internal__text strong{
+        font-size: 18px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__prev{
+        width: 300px;
+        height: 50px;
+        margin-top: 45px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__prev a{
+        font-size: 18px;
+    }
+    .tyc-internal .tyc-internal__content .tyc-internal__top{
+        display: none;
+    }
+}

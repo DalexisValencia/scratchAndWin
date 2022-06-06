@@ -1,0 +1,29 @@
+<section class="tyc-dashboard">
+  <div class="tyc-dashboard__wrapper">
+    <h1 class="tyc-title">{{name}}</h1>
+    <div class="tyc-type">
+      {% set taxonomies = get_taxonomies_by_vid('abi_legalmaker_categories_terms')%}
+      {% for item in taxonomies %}
+      <a href="{{item.url}}" target="{{item.external ? '_blank' : '_self'}}"class="tyc-type__item {% if item.tid == term.id %}active {% endif %}" data-tab="tab1">{{item.name}}</a>   
+      {% endfor %}        
+    </div>
+
+    <div class="tyc-content active" data-content="tab1">
+      {% set content = get_content_related_taxonomy(term.id)%}
+      {% for item in content['data'] %}       
+      <div class="content-item">
+        <span class="content-item__state"><img src="/{{content['module_path']}}/assets/css/img/arrow.svg" alt=""></span>
+        <h3 class="content-item__title">{{item.title}}</h3>
+        {% if item.pdf != "" %}
+        <p class="content-item__text pdf"><a href="{{item.pdf}}" target="_blank">{{item.title}}</a></p>
+        {% else %}
+        <p class="content-item__text web"><a href="{{item.path}}">{{item.title}}</a></p>
+        {% endif %}
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{{attach_library('abi_legalmaker/legalmakerGeneral')}}
