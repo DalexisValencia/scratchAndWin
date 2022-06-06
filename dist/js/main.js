@@ -1,19 +1,20 @@
 (function ($) {
     $(document).ready(function () {
-        console.warn("kjsjsjks")
+        var showModal = false;
         $('#scratchandwin').wScratchPad({
             size: 70,
-            bg: 'https://dev-ruleta.pantheonsite.io/modules/custom/ab_raspaygana/dist/img/logo.png',
+            bg: 'dist/img/slide1.jpg',
             realtime: true,
             fg: 'dist/img/slide2.jpg',
             // 'cursor': 'url("http://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
             scratchMove: function (e, percent) {
                 // $('#demo2-percent').html(percent);
-                  console.info("aqui", percent)
-                // if (percent > 70) {
-                //   this.clear();
-                // alert("Mostrar modal")
-                // }
+                 // console.info("aqui", percent)
+                if (percent > 70 && !showModal) {
+                  showModal = true;
+                  this.clear();
+                  alert("Mostrar modal")
+                }
               }
         });
     });

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scratchpad {
+            width: 450px;
+            height: 445px;
+            border: solid 10px #FFFFFF;
+            margin: 0 auto;
+        }
+
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: #ddd;
+        }
+
+        @media (max-width: 500px) {
+            .scratchpad {
+                width: 90%;
+                height: 500px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="promo" class="scratchpad"></div>
+
+
+</body>
+<script src="dist/vendor/jquery-latest.min.js" type="text/javascript"></script>
+<script src="dist/vendor/wScratchPad/wScratchPad.min.js" type="text/javascript"></script>
+<script>
+    $('#promo').wScratchPad({
+        size: 70,
+        bg: 'dist/img/slide1.jpg',
+        realtime: true,
+        fg: 'dist/img/slide2.jpg',
+        // 'cursor': 'url("http://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
+        scratchMove: function (e, percent) {
+            // $('#demo2-percent').html(percent);
+              console.info("aqui", percent)
+            if (percent > 70) {
+              this.clear();
+            alert("Mostrar modal")
+            }
+          }
+    });
+</script>
+
+</html>
