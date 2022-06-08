@@ -5,11 +5,13 @@
     border-bottom: 3px solid $sixth-brand-color;
     color: rgba($secondary-brand-color, 0.8);
     transition: 0.5s all;
+
     font: {
         size: 14px;
         weight: 400;
         family: 'Roboto', sans-serif;
     }
+
     &:focus {
         border-bottom-color: $primary-brand-color;
     }
@@ -19,6 +21,7 @@
     .scratchandwin__form-title {
         color: $primary-brand-color;
         margin-bottom: 30px;
+
         font: {
             style: normal;
             weight: 400;
@@ -27,62 +30,93 @@
         }
     }
 
-    .scratchandwin__form-subtitle{
+    .scratchandwin__form-subtitle {
         color: $fourth-brand-color;
         margin-bottom: 20px;
+
         font: {
             family: 'Roboto', sans-serif;
             size: 18px;
         }
     }
 
-    .ab-raspaygana-form{
+    .ab-raspaygana-form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         .js-form-item {
             margin-bottom: 20px;
             width: 100%;
+
             label:not(.error):not(.option) {
                 display: none;
             }
 
-            input:not([type="checkbox"]){
+            input:not([type="checkbox"]) {
                 @extend %input;
                 @include inputForm;
+
                 &::placeholder {
                     color: $sixth-brand-color;
                 }
-                
+
+                &.error {
+                    border-bottom: 3px solid #FF0000;
+                }
             }
+
+            label.error {
+                color: $fourth-brand-color;
+                background-color: #FF0000;
+                margin-top: 5px;
+                width: fit-content;
+                padding: 0 3px;
+
+                font: {
+                    size: 12px;
+                    family: 'Roboto', sans-serif;
+                }
+            }
+
             &.js-form-type-select,
-            &.js-form-item-nacimiento{
+            &.js-form-item-nacimiento {
                 width: 48%;
             }
+
             &.js-form-type-select {
-                select{
+                select {
                     @include inputForm;
+
                     &:focus {
                         border-bottom: 2px solid $primary-brand-color;
                     }
                 }
             }
-            &.js-form-type-checkbox{
+
+            &.js-form-type-checkbox {
                 width: 100%;
                 padding-left: 30px;
                 position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+
                 label {
                     display: inline-block;
                     color: $secondary-brand-color;
+
                     a {
                         color: $fourth-brand-color;
                         text-decoration: underline;
                     }
+
                     font: {
                         size: 12px;
                         family: 'Roboto', sans-serif;
                     }
                 }
+
                 input[type="checkbox"] {
                     @extend %checkbox;
                     position: absolute;
@@ -91,17 +125,19 @@
                 }
             }
         }
-        .form-error{
+
+        .form-error {
             width: 100%;
             color: red;
             text-align: left;
+
             font: {
                 size: 11px;
                 family: 'Roboto', sans-serif;
             }
         }
 
-        .js-form-submit{
+        .js-form-submit {
             @extend %button;
             width: 100%;
             background-color: $primary-brand-color;
@@ -109,11 +145,14 @@
             color: $secondary-brand-color;
             text-transform: uppercase;
             padding: 15px 25px;
+
             font: {
                 size: 18px;
                 family: 'Roboto', sans-serif;
             }
-            &[disabled=disabled], &:disabled {
+
+            &[disabled=disabled],
+            &:disabled {
                 opacity: 0.7;
             }
         }
