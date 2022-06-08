@@ -241,6 +241,12 @@ $media-bp-lg: 1199.98px;
       width: 300px;
     }
   }
+  &.scratchAndWin {
+    .award-box__title,
+    .award-box__content {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: $media-bp-md) {
