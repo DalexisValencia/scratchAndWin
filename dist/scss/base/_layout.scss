@@ -70,3 +70,9 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
+#block-pe-pilsencallao-thema-page-title, 
+nav[role="navigation"],
+#block-pe-pilsencallao-thema-page-title{
+display: none;
+}
