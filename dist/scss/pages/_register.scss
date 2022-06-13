@@ -21,7 +21,7 @@
     .scratchandwin__form-title {
         color: $primary-brand-color;
         margin-bottom: 30px;
-
+        @extend %borderText;
         font: {
             style: normal;
             weight: 400;

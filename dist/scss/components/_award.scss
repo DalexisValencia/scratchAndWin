@@ -69,12 +69,17 @@ $media-bp-lg: 1199.98px;
   .award-box__title {
     color: $primary-brand-color;
     line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    @extend %borderText;
+    letter-spacing: 3px;
+    &::before {
+      -webkit-text-stroke-width: 8px;
+    }
     font: {
       size: 60px;
       family: 'barbaro';
     }
-    text-align: center;
-    text-transform: uppercase;
   }
   .award-box__content {
     display: grid;

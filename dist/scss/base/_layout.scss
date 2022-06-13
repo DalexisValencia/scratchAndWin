@@ -10,6 +10,27 @@
     background-size: cover;
 }
 
+%borderText {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: attr(data-title) " ";
+        color: red;
+        -webkit-text-fill-color: $primary-brand-color;
+        -webkit-text-stroke-color: $secondary-brand-color;
+        -webkit-text-stroke-width: 6px;
+        // font: {
+        //     size: 60px;
+        //     family: 'barbaro';
+        //     style: normal;
+        //     weight: 400;
+        // }
+    }
+    span.relative-title {
+        position: relative;
+        z-index: 1;
+    }
+}
 .main__sed-cumbia{
     position: relative;
     width: 100%;
